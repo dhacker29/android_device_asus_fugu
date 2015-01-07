@@ -74,6 +74,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.camera.0.facing=back \
     ro.camera.0.orientation=0
 
+# Clat
+PRODUCT_PACKAGES += \
+    clatd \
+    clatd.conf
+
 # specific management of audio_policy.conf
 PRODUCT_COPY_FILES += \
     device/asus/fugu/audio_policy.conf:system/etc/audio_policy.conf
